@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags learning page</title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+section{
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#heading{
+    color: #0077cc;
+}
+pre{
+    background: #eee;
+    padding: 10px;
+    overflow-x: auto;
+}
+@media screen and (max-width:600px) {
+    body{
+        padding: 10px;
+    }
+    video, audio {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>    
+<body>
+    <h1 id="heading"> learn HTML tags</h1>
+
+    <section>
+        <h2> <u>Headings</u></h2>
+        <h1> Heading 1</h1>
+        <h2> Heading 2</h2>
+        <h3> Heading 3</h3>
+        <h4> Heading 4</h4>
+        <h5> Heading 5</h5>
+        <h6> Heading 6</h6>
+    </section>
+
+    <section>
+        <h2> Paragraph and Text Formatting</h2>
+        <!-- The <strong> HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. -->
+            <!-- Typically element inside<em> is displayed in italic type. However, it should not be used to apply italic styling; use the CSS font-style property for that purpose.  -->
+        <p><strong>Important</strong>, <em>Italic</em>, <u>Underline</u>, <mark>Highlighted</mark>, <del>Deleted</del>, <sup>Superscript</sup>, <sub>Subscript</sub>, <b>Bold</b>, <i>Italic</i></p>
+        <pre>This is Preformatted Text</pre>
+        <!-- PRE Tag is used to display text as it is (without ignorning spaces and next line). -->
+    </section>
+    <hr>
+    <!-- HR Tag used to display a horizontal ruler, used to separate content. -->
+    <section> 
+        <h2>Links and Images</h2>
+        <a href="https://www.google.com"target="_blank">Visit Google</a>
+        <br>
+        <img src="https://via.placeholder.com/150"alt="placeholder image for testing"width="150"/>
+        <!-- alt = alternative name ( display when image can't load). -->
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <h3>Unordered list</h3>
+        <ul> <!--unordered list-->
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cheery</li>
+        </ul>
+        <h3>Ordered list</h3>
+        <ol> <!--ordered list-->
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        <h3>Description list</h3>
+        <dl>
+            <!-- Description lists are useful for displaying metadata as a list of key-value pairs. -->
+            <dt>HTML</dt> 
+            <!-- {dt} = defination list -->
+            <dd>Hyper Text Markup Language</dd>
+            <!-- The <dd> HTML element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>). -->
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Tables</h2>
+        <table border="1" cellpadding="5">
+        <thead> <!--used to display table head-->
+            <tr> <!--used to display table row-->
+                <th>Name</th> <!--<th> used to display table header-->
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody> <!--used to display table body-->
+            <tr>
+                <td>Shivani</td> <!--used to display table data-->
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Pranjal</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Forms</h2>
+        <!--Forms are used to collect data from the users.-->
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="write your E-mail id...">
+            <br>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="write your name..."><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">Female 
+            <!-- Radio button for only one choice -->
+            <br><br>
+
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="drawing">Drawing
+            <input type="checkbox" name="hobby" value="cooking">Cooking
+            <input type="checkbox" name="hobby" value="travelling">Travelling
+            <input type="checkbox" name="hobby" value="dancing">Dancing
+            <input type="checkbox" name="hobby" value="gaming">Gaming
+            <input type="checkbox" name="hobby" value="gardening">Gardening
+            <input type="checkbox" name="hobby" value="music">Music
+            <input type="checkbox" name="hobby" value="others">Others<br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="South Korea">South Korea</option>
+                <option value="United States of America">United States of America</option>
+                <option value="Canada">Canada</option>
+                <option value="japan">Japan</option>
+                <option value="Thailand">Thailand</option>
+                <option value="sri lanka">Sri Lanka</option>
+                <option value="china">China</option>
+                <option value="taiwan">Taiwan</option>
+                <option value="germany">Germany</option>
+                <option value="Denmark">Denmark</option>
+                <option value="australia">Australia</option>
+                <option value="egypt">Egypt</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="chile">Chile</option>
+                <option value="other country">Other Country</option>
+            </select> <br><br>
+
+            <textarea rows="4" cols="30" placeholder="write something..."> write something here...
+            </textarea><br><br>
+            <!--textarea is used for feedback from the user.-->
+            <input type="Submit" value="Submit">
+                </form>
+    </section>
+
+    <section>
+        <h2>Media Tags</h2>
+        <audio controls>
+            <source src="audio.mp3"type="audio/mpeg">Your browser does not support audio
+        </audio><br><br>
+
+        <video width="320" height="240"controls>
+            <source src="movie.mp4"type="video/mp4">Your browser does not support video
+        </video>
+    </section>
+
+    <section>
+        <h2>Semantic Tags</h2> <!--semantic tags = by kooing at the tags we understand the meaning of the tag. (header, Footer)-->
+        <article>This is an article.</article> <!--Article Tag for an article on your page.-->
+        <aside>This is an aside section.</aside> <!--Aside TAg for content aside main content specially ads.-->
+        <details>
+            <!-- The <details> HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an open state. A summary or label must be provided using the <summary> element. -->
+            <summary>Click to expand</summary>Hidden details inside
+        </details>
+        <figure>
+            <img src="https://via.placeholder.com/100"alt="figure">
+            <figcaption>This is a caption</figcaption>
+        </figure>
+        <footer>This is the footer.</footer>
+        <header>This is a header.</header>
+        <main>This is the main content.</main>
+        <nav>This is type navigation area.</nav>
+        <section>This is a section tag.</section>
+        <time datetime="2025-07-25">Today's date=2025-07-25</time>
+    </section>
+</body>
+</html>
